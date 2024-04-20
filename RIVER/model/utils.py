@@ -1,8 +1,7 @@
 import torch
 import torch.nn as nn
 
-from lutils.tensor_folder import TensorFolder
-
+from ..lutils.tensor_folder import TensorFolder
 
 class SequenceConverter(nn.Module):
     def __init__(self, backbone: nn.Module):
@@ -35,3 +34,10 @@ class SequenceConverter(nn.Module):
             x = self.convert(x, observations_count)
 
         return x
+
+def normalize(in_channels, **kwargs):
+    return nn.GroupNorm(num_groups=32, num_channels=in_channels, eps=1e-6, affine=True)
+
+
+def swish(x):
+    return x*torch.sigmoid(x)

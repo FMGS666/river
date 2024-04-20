@@ -3,12 +3,12 @@ from typing import Any
 import torch
 import torch.nn as nn
 
-from lutils.configuration import Configuration
-from lutils.dict_wrapper import DictWrapper
-from model.layers.utils import SequenceConverter
-from model.vqgan.decoder import build_decoder
-from model.vqgan.encoder import build_encoder
-from model.vqgan.vector_quantizer import build_vector_quantizer
+from ..lutils.configuration import Configuration
+from ..lutils.dict_wrapper import DictWrapper
+from .utils import SequenceConverter
+from .decoder import build_decoder
+from .encoder import build_encoder
+from .vector_quantizer import build_vector_quantizer
 
 
 class VQVAE(nn.Module):

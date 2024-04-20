@@ -1,6 +1,6 @@
 import yaml
 
-from lutils.dict_wrapper import DictWrapper
+from .dict_wrapper import DictWrapper
 
 
 class Configuration(DictWrapper):

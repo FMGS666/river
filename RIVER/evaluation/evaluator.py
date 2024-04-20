@@ -5,12 +5,12 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 
-from lutils.configuration import Configuration
-from lutils.constants import MAIN_PROCESS
-from lutils.dict_wrapper import DictWrapper
-from lutils.logger import Logger
-from lutils.logging import to_video, make_observations_grid
-from lutils.running_average import RunningMean
+from ..lutils.configuration import Configuration
+from ..lutils.constants import MAIN_PROCESS
+from ..lutils.dict_wrapper import DictWrapper
+from ..lutils.logger import Logger
+from ..lutils.logging import to_video, make_observations_grid
+from ..lutils.running_average import RunningMean
 
 
 class Evaluator:

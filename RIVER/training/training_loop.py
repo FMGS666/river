@@ -5,12 +5,12 @@ from typing import Any, Dict
 import numpy as np
 import torch
 
-from dataset import VideoDataset
-from evaluation.evaluator import Evaluator
-from lutils.configuration import Configuration
-from lutils.logger import Logger
-from model import Model
-from training.trainer import Trainer
+from ..dataset import VideoDataset
+from ..evaluation.evaluator import Evaluator
+from ..lutils.configuration import Configuration
+from ..lutils.logger import Logger
+from ..model import Model
+from .trainer import Trainer
 
 
 def setup_training_arguments(args: ArgsNamespace) -> Dict[str, Any]:

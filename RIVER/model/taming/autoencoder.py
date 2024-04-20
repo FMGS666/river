@@ -3,8 +3,8 @@ import importlib
 import torch
 import torch.nn as nn
 
-from model.vqgan.taming.modules import Encoder, Decoder
-from model.vqgan.taming.quantize import VectorQuantizer2 as VectorQuantizer
+from .modules import Encoder, Decoder
+from .quantize import VectorQuantizer2 as VectorQuantizer
 
 
 def get_obj_from_str(string, reload=False):

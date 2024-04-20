@@ -1,6 +1,6 @@
 from argparse import Namespace as ArgsNamespace
 
-from lutils.distributed import setup_torch_distributed
+from ..lutils.distributed import setup_torch_distributed
 from .training_loop import setup_training_arguments, training_loop
 
 

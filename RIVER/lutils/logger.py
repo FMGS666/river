@@ -5,7 +5,7 @@ import torch
 import wandb
 from tqdm import tqdm
 
-from lutils.configuration import Configuration
+from .configuration import Configuration
 
 
 class Logger(object):

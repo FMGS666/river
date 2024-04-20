@@ -6,8 +6,8 @@ import torch.nn as nn
 from einops import rearrange, repeat
 from einops.layers.torch import Rearrange
 
-from lutils.configuration import Configuration
-from model.layers.position_encoding import build_position_encoding
+from ..lutils.configuration import Configuration
+from .layers.position_encoding import build_position_encoding
 
 
 def timestamp_embedding(timesteps, dim, scale=200, max_period=10000, repeat_only=False):

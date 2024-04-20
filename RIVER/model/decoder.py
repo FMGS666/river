@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 from einops import rearrange
 
-from lutils.configuration import Configuration
-from model.layers import ResidualBlock, UpBlock
-from model.vqgan.utils import swish, normalize
+from ..lutils.configuration import Configuration
+from .layers import ResidualBlock, UpBlock
+from .utils import swish, normalize
 
 
 class Decoder(nn.Module):

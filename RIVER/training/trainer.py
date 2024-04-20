@@ -7,13 +7,13 @@ from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from transformers import get_polynomial_decay_schedule_with_warmup
 
-from evaluation.evaluator import Evaluator
-from lutils.configuration import Configuration
-from lutils.constants import MAIN_PROCESS
-from lutils.dict_wrapper import DictWrapper
-from lutils.logger import Logger
-from lutils.logging import to_video, make_observations_grid
-from training.utils import check_ddp_consistency
+from ..evaluation.evaluator import Evaluator
+from ..lutils.configuration import Configuration
+from ..lutils.constants import MAIN_PROCESS
+from ..lutils.dict_wrapper import DictWrapper
+from ..lutils.logger import Logger
+from ..lutils.logging import to_video, make_observations_grid
+from .utils import check_ddp_consistency
 
 
 class Trainer:

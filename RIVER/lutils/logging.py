@@ -5,7 +5,7 @@ import torch
 import torch.nn.functional as F
 from torchvision.utils import make_grid
 
-from lutils.tensor_folder import TensorFolder
+from .tensor_folder import TensorFolder
 
 
 @torch.no_grad()

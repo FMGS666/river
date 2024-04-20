@@ -6,11 +6,11 @@ from einops import rearrange
 from torchdiffeq import odeint
 from tqdm import tqdm
 
-from lutils.configuration import Configuration
-from lutils.dict_wrapper import DictWrapper
-from model.vector_field_regressor import build_vector_field_regressor
-from model.vqgan.taming.autoencoder import vq_f8_ddconfig, vq_f8_small_ddconfig, vq_f16_ddconfig, VQModelInterface
-from model.vqgan.vqvae import build_vqvae
+from ..lutils.configuration import Configuration
+from ..lutils.dict_wrapper import DictWrapper
+from .vector_field_regressor import build_vector_field_regressor
+from .taming.autoencoder import vq_f8_ddconfig, vq_f8_small_ddconfig, vq_f16_ddconfig, VQModelInterface
+from .vqvae import build_vqvae
 
 
 class Model(nn.Module):

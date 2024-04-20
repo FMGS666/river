@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from einops import rearrange
 
-from lutils.configuration import Configuration
+from ..lutils.configuration import Configuration
 
 
 class VectorQuantizer(nn.Module):
